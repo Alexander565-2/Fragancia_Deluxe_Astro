@@ -1,0 +1,19 @@
+---
+import { Navbar } from "astro-bootstrap";
+import type { NavbarItemType } from "astro-bootstrap";
+const items: NavbarItemType[] = [
+  { text: "Inicio", href: "/" },
+  { text: "Sobre Nosotros", href: "#About"},
+  {text: 'Catalogo', href:"#Catalogo"}
+];
+const id = "navBar";
+---
+
+<Navbar class="navbar-expand-lg">
+  <div class="container-fluid border-bottom mx-5">
+    <Navbar.Toggler controls={id} />
+    <Navbar.Collapse id={id}>
+      <Navbar.Items {items} class="me-auto mb-2 mb-lg-0" />
+    </Navbar.Collapse>
+  </div>
+</Navbar>

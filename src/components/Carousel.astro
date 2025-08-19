@@ -1,0 +1,27 @@
+---
+import { Carousel as BootstrapCarousel } from "astro-bootstrap";
+import type { CarouselSlideType, CarouselType } from "astro-bootstrap";
+interface Props {
+    id:string,
+    slides:CarouselSlideType[]
+}
+const { id, slides } = Astro.props as Props;
+---
+
+<BootstrapCarousel id={id} fade>
+  <BootstrapCarousel.Indicators id={id} {slides} />
+  <BootstrapCarousel.Inner>
+    {
+      slides.map((slide) => (
+        <BootstrapCarousel.Item active={slide.active}>
+          <img
+            src={slide.img}
+            alt={slide.alt}
+            class="d-block w-100 img-fluid"
+          />
+        </BootstrapCarousel.Item>
+      ))
+    }
+  </BootstrapCarousel.Inner>
+  <BootstrapCarousel.Controls id={id} />
+</BootstrapCarousel>
