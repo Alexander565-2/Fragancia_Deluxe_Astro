@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,16 +15,16 @@ import "bootstrap/dist/css/bootstrap.css";
     />
     <title>Fragancia Deluxe</title>
   </head>
-  <body>
+  <body class="bg-darkblue">
     <div class="hero Logo text-center pt-4">
-      <h3>Fragancia Deluxe</h3>
+      <h3 class="font-bold"><strong><span class="gold">Fragancia</span> Deluxe</strong></h3>
     </div>
-    <div class="container">
+    <div>
       <slot />
     </div>
 
     <footer class="footer-perfumeria">
-      <div class="bg-dark py-3 border-top">
+      <div class="py-3 border-top">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
@@ -56,3 +56,25 @@ import "bootstrap/dist/css/bootstrap.css";
     src="https://kit.fontawesome.com/fbdfb4841c.js"
     crossorigin="anonymous"></script>
 </html>
+
+<style is:global>
+  .gold {
+    color: #d9a515;
+  }
+
+.text-darkblue {
+  color: #040b12 !important;
+}
+
+.bg-darkblue {
+  background-color: #040b12 !important;
+}
+
+.bg-darkgreen{
+  background-color: #0e171e;
+}
+
+.bg-gold{
+  background-color: #d9a515;
+}
+</style>
