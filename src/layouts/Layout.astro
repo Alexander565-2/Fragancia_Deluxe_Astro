@@ -25,30 +25,50 @@ import "bootstrap/dist/css/bootstrap.css";
       <slot />
     </div>
 
-    <footer class="footer-perfumeria">
-      <div class="py-3 border-top">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <p class="mb-0 text-white">
-                &copy; 2024 Fragancia Deluxe. Todos los derechos reservados.
-              </p>
-            </div>
-            <div class="col-md-6 text-md-end">
-              <small>
-                <a href="#" class="text-light me-3 text-decoration-none"
-                  >Política de Privacidad</a
-                >
-                <a href="#" class="text-light me-3 text-decoration-none"
-                  >Términos de Uso</a
-                >
-                <a href="#" class="text-light text-decoration-none">Cookies</a>
-              </small>
-            </div>
-          </div>
-        </div>
+<footer class="text-white py-5 border-top">
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-3">
+        <h5>Fragancia Deluxe</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Acerca de</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Carreras</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
       </div>
-    </footer>
+
+      <!-- Columna 2 -->
+      <div class="col-md-3">
+        <h5>Productos</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Perfumes Hombre</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Perfumes Mujer</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Ofertas</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-md-3">
+        <h5>Soporte</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Términos</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4 -->
+      <div class="col-md-3">
+        <h5>Síguenos</h5>
+        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
   </body>
   <style is:global>
     .gold {

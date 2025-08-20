@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Barra from "../components/Barra.astro";
 import Carousel from "../components/Carousel.astro";
+import ScrollCard from "../components/ScrollCard.astro";
 import type { CarouselSlideType } from "astro-bootstrap";
 const slidesMen: CarouselSlideType[] = [
   { img: "Carousel/BossBose.jpg", alt: "Boss Bose", active: true },
@@ -64,4 +65,5 @@ const slidesWomen: CarouselSlideType[] = [
     </p>
     <img src="logo-cut.jpg" class="img-fluid mx-auto d-block" alt="">
   </section>
+  <ScrollCard></ScrollCard>
 </Layout>

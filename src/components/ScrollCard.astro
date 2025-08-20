@@ -1,0 +1,133 @@
+---
+import perfumes from '../data/perfumes.json'
+const sampleCards = [
+  { id: "1", image: "Carousel/BossBose.jpg", title: "Oficinas Modernas", subtitle: "Espacios de trabajo innovadores para tu empresa", buttonText: "Ver Más"},
+  { id: "2", image: "Carousel/BossBose.jpg", title: "Hogar Acogedor", subtitle: "Diseños que transforman tu espacio personal", buttonText: "Explorar" },
+  { id: "3", image: "Carousel/BossBose.jpg", title: "Restaurante Elegante", subtitle: "Ambientes perfectos para experiencias gastronómicas", buttonText: "Reservar" },
+  { id: "4", image: "Carousel/BossBose.jpg", title: "Tienda Retail", subtitle: "Espacios comerciales que impulsan las ventas", buttonText: "Contactar" },
+  { id: "5", image: "Carousel/BossBose.jpg", title: "Hotel de Lujo", subtitle: "Hospitalidad redefinida con diseño excepcional", buttonText: "Descubrir" },
+  { id: "6", image: "Carousel/BossBose.jpg", title: "Centro Fitness", subtitle: "Espacios motivadores para el bienestar", buttonText: "Unirse" },
+];
+
+const infiniteCards = [
+  ...perfumes.map((c, i) => ({ ...c, id: `end-${c.id}`, originalIndex: i })),
+  ...perfumes.map((c, i) => ({ ...c, originalIndex: i })),
+  ...perfumes.map((c, i) => ({ ...c, id: `start-${c.id}`, originalIndex: i })),
+];
+---
+
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <h2>Nuestros Perfumes Destacados</h2>
+    <p>Arrastra para explorar nuestra colección de Olores únicos</p>
+  </div>
+
+  <div id="carousel" class="d-flex overflow-auto flex-nowrap py-4" style="cursor: grab;">
+    {infiniteCards.map((card) => (
+      <div
+        id={card.id}
+        class="card flex-shrink-0 me-3 shadow-sm"
+        style="width: 18rem; transform: scale(1) translateY(0); z-index:1; transition: transform 0.3s;"
+      >
+        <img src={"Perfumes/"+(card.Referencia+card.Codigo).replace(/ /g,"")+".png"} class="card-img-top" alt={card.Referencia+card.Codigo} draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">{card.casaComercial}</h5>
+          <p class="card-text">{card.Referencia}</p>
+          <button class="btn btn-primary w-100">{card.Codigo}</button>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="text-center mt-3 text-muted" style="font-size:0.9rem;">
+    💡 Arrastra horizontalmente para navegar por las cards • ♾️ Scroll infinito activado
+  </div>
+</div>
+
+<!-- @ts-ignore -->
+<script is:inline client:load>
+  const carousel = document.getElementById("carousel");
+  let isDragging = false;
+  let startX = 0;
+  let scrollLeft = 0;
+
+  const sampleCardsLength = 6;
+  const cardWidth = 288 + 16; // ancho card + margen
+  const totalOriginalWidth = sampleCardsLength * cardWidth;
+
+  const updateTransforms = () => {
+    const carouselRect = carousel.getBoundingClientRect();
+    const carouselCenter = carouselRect.left + carouselRect.width / 2;
+    Array.from(carousel.children).forEach((card) => {
+      const rect = card.getBoundingClientRect();
+      const cardCenter = rect.left + rect.width / 2;
+      const distance = Math.abs(cardCenter - carouselCenter);
+      const maxDistance = carouselRect.width / 2 + rect.width / 2;
+      const normalized = Math.min(distance / maxDistance, 1);
+      const scale = 1.1 - normalized * 0.25;
+      const translateY = normalized * 20;
+      const zIndex = Math.round(10 - normalized * 9);
+      card.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+      card.style.zIndex = zIndex;
+    });
+  };
+
+  const handleInfiniteScroll = () => {
+    const currentScroll = carousel.scrollLeft;
+    if (currentScroll >= totalOriginalWidth * 2) {
+      carousel.scrollLeft = currentScroll - totalOriginalWidth;
+    } else if (currentScroll <= 0) {
+      carousel.scrollLeft = currentScroll + totalOriginalWidth;
+    }
+  };
+
+  carousel.scrollLeft = totalOriginalWidth;
+
+  carousel.addEventListener("scroll", () => {
+    updateTransforms();
+    handleInfiniteScroll();
+  });
+
+  carousel.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    carousel.style.cursor = "grabbing";
+  });
+
+  carousel.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2;
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+
+  const stopDrag = () => {
+    isDragging = false;
+    carousel.style.cursor = "grab";
+  };
+
+  carousel.addEventListener("mouseup", stopDrag);
+  carousel.addEventListener("mouseleave", stopDrag);
+
+  carousel.addEventListener("touchstart", (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+  });
+
+  carousel.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2;
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+
+  carousel.addEventListener("touchend", () => {
+    isDragging = false;
+  });
+
+  setTimeout(updateTransforms, 100);
+</script>
