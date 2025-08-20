@@ -25,104 +25,81 @@ import "bootstrap/dist/css/bootstrap.css";
       <slot />
     </div>
 
-<footer>
-    <div class="footer-content">
-      <div class="footer-col logo-col">
-        <div class="footer-logo">
-          <a href="index.html" class="logo-link" aria-label="Inicio">
-            <div class="footer-logo-placeholder">
-              <div class="footer-logo-img-container">
-                <img src="img/perfume.jpg" alt="Fragancias Eternas" class="footer-logo-img" loading="lazy">
-              </div>
-              <span class="footer-nombre-perfumeria">Fragancias Deluxe</span>
-            </div>
-          </a>
-        </div>
+<footer class="bg-dark text-white pt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Columna 1: Logo y pagos -->
+      <div class="col-md-3 mb-4">
+        <a href="index.html" class="d-flex align-items-center mb-3 text-white text-decoration-none">
+          <img src="img/perfume.jpg" alt="Fragancias Deluxe" class="img-fluid me-2" style="max-width:50px;">
+          <span class="h5 mb-0">Fragancias Deluxe</span>
+        </a>
         <p>Perfumería de lujo desde 2025</p>
-        <div class="metodos-pago">
+        <div class="d-flex gap-2 fs-4">
           <i class="fab fa-cc-visa"></i>
           <i class="fab fa-cc-mastercard"></i>
           <i class="fab fa-cc-paypal"></i>
         </div>
       </div>
-      
-      <div class="footer-col">
-        <h4>Comprar</h4>
-        <ul>
-          <li><a href="#">Perfumes para Damas</a></li>
-          <li><a href="#">Perfumes para Caballeros</a></li>
-          <li><a href="#">Ofertas Especiales</a></li>
-          <li><a href="#">Nuevos Lanzamientos</a></li>
+
+      <!-- Columna 2: Comprar -->
+      <div class="col-md-3 mb-4">
+        <h5>Comprar</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Perfumes para Damas</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Perfumes para Caballeros</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Ofertas Especiales</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Nuevos Lanzamientos</a></li>
         </ul>
       </div>
-      
-  <div class="footer-col">
-  <h4>Contacto</h4>
-  <ul class="contact-info">
-    <li class="contact-line">
-      <i class="fas fa-map-marker-alt"></i>
-      <span>Calle Bolivar, Jipijapa, Manabí</span>
-    </li>
-    <li class="contact-line">
-      <i class="fas fa-phone"></i>
-      <a href="tel:https://walink.co/8d0ad0">098 508 781 1</a>
-    </li>
-    <li class="contact-line">
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:osentufa@gmail.com">osentufa@gmail.com</a>
-    </li>
-    <li class="schedule-title">
-      <i class="fas fa-clock"></i>
-      <span>Horario de atención</span>
-    </li>
-    <li class="schedule-item">
-       <span class="schedule-day">Lunes a Viernes:</span>
-      <span class="schedule-time">8:30am - 7:30pm</span>
-    </li>
-    <li class="schedule-item">
-       <span class="schedule-day">Sábado:</span>
-      <span class="schedule-time">9:00am - 7:30pm</span>
-    </li>
-    <li class="schedule-item">
-       <span class="schedule-day">Domingo:</span>
-      <span class="schedule-time">Cerrado</span>
-    </li>
-  </ul>
-</div>
-      
-      <div class="footer-col">
-        <h4>Síguenos</h4>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/laperfumeriaoficial?mibextid=wwXIfr&amp;rdid=7erM9XS4VxZFPP3g&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15nhsYgXkz%2F%3Fmibextid%3DwwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/laperfumeriaoficialec?igsh=bHpsZTk4ZWNlMzF1" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@fragancias.eternas?_t=ZM-8xcoZJiEO86&amp;_r=1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-          </div>
 
-        <div class="app-download">
-          <p>Descarga nuestra app</p>
-          <div class="app-btns">
-            <a href="#" class="app-btn google-play">
-              <i class="fab fa-google-play"></i>
-              <span>Google Play</span>
-            </a>
-            <a href="#" class="app-btn app-store">
-              <i class="fab fa-apple"></i>
-              <span>App Store</span>
-            </a>
-          </div>
+      <!-- Columna 3: Contacto -->
+      <div class="col-md-3 mb-4">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Calle Bolivar, Jipijapa, Manabí</li>
+          <li class="mb-2"><i class="fas fa-phone me-2"></i><a href="tel:+0985087811" class="text-white text-decoration-none">098 508 781 1</a></li>
+          <li class="mb-2"><i class="fas fa-envelope me-2"></i><a href="mailto:osentufa@gmail.com" class="text-white text-decoration-none">osentufa@gmail.com</a></li>
+          <li class="mt-3"><i class="fas fa-clock me-2"></i>Horario de atención</li>
+          <li>Lunes a Viernes: 8:30am - 7:30pm</li>
+          <li>Sábado: 9:00am - 7:30pm</li>
+          <li>Domingo: Cerrado</li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Redes y apps -->
+      <div class="col-md-3 mb-4">
+        <h5>Síguenos</h5>
+        <div class="d-flex gap-3 mb-3 fs-4">
+          <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>Descarga nuestra app</p>
+        <div class="d-flex flex-column gap-2">
+          <a href="#" class="btn btn-outline-light btn-sm d-flex align-items-center justify-content-center">
+            <i class="fab fa-google-play me-2"></i> Google Play
+          </a>
+          <a href="#" class="btn btn-outline-light btn-sm d-flex align-items-center justify-content-center">
+            <i class="fab fa-apple me-2"></i> App Store
+          </a>
         </div>
       </div>
+
     </div>
-    
-    <div class="copyright">
-      <p>© 2025 Fragancias Deluxe. Todos los derechos reservados.</p>
-      <div class="legal-links">
-        <a href="#">Términos y condiciones</a> | 
-        <a href="#">Política de privacidad</a> | 
-        <a href="#">Aviso legal</a>
+
+    <!-- Copyright -->
+    <div class="border-top border-secondary pt-3 mt-3 text-center">
+      <p class="mb-1">© 2025 Fragancias Deluxe. Todos los derechos reservados.</p>
+      <div class="d-flex justify-content-center gap-2 flex-wrap">
+        <a href="#" class="text-white text-decoration-none">Términos y condiciones</a> |
+        <a href="#" class="text-white text-decoration-none">Política de privacidad</a> |
+        <a href="#" class="text-white text-decoration-none">Aviso legal</a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
   </body>
   <style is:global>
