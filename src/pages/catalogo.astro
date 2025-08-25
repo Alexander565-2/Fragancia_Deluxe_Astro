@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const baseUrl = Astro.site;
 ---
 
 <Layout>
@@ -15,6 +16,7 @@ import Layout from "../layouts/Layout.astro";
 
 <script>
 
+  const urlBase = "{base}"
 
   interface json_item {
     item: {
@@ -45,7 +47,7 @@ import Layout from "../layouts/Layout.astro";
     cards_catalogo.appendChild(h3)
   } else {
     resultados_search.map((perfume) => {
-      const card = create_card(perfume.item);
+      const card = create_card(perfume.item, urlBase);
       cards_catalogo.appendChild(card);
     });
   }
