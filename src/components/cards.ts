@@ -55,7 +55,7 @@ const create_card = (info_cards: cards_props):HTMLDivElement => {
   div_card.style.width = "17rem";
 
   const formatSrc:string = (info_cards.Referencia+info_cards.Codigo).replaceAll(" ","")
-  img_card.src = `Fragancia_Deluxe_Astro/Perfumes/${formatSrc}.png`;
+  img_card.src = `/Perfumes/${formatSrc}.png`;
   img_card.alt = formatSrc
   img_card.className = "card-img-top";
   img_card.style.objectFit="cover"
