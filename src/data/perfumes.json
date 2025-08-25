@@ -1,6 +1,42 @@
 [
-    {"id":1,"casaComercial":"Carolina Herrera","Referencia":"212","Codigo":"Ariana","Descripcion":"Este perfume es ideal para mujeres cosmopolitas, seguras de si mismas.","notas":["Almizcle","Floral","Cuero","Aromatica"]},
-    {"id":2,"casaComercial":"Carolina Herrera","Referencia":"212 Heroes Forever Young","Codigo":"PUREYOUTH","Descripcion":"Perfume vibrante y juvenil","notas":["Floral","Frutal","Aromatico"]},
-    {"id":3,"casaComercial":"Carolina Herrera","Referencia":"212 Sexy","Codigo":"Sexy Symbol","Descripcion":"Es una fragancia seductora y sofisticada realizada para mujeres que irradian confianza.","notas":["Almizcle","Frutal","Aromatico"]}
-
+  {
+    "id": 1,
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212",
+    "Codigo": "Ariana",
+    "Descripcion": "Este perfume es ideal para mujeres cosmopolitas, seguras de si mismas.",
+    "notas": ["Almizcle", "Floral", "Cuero", "Aromatica"]
+  },
+  {
+    "id": 2,
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Heroes Forever Young",
+    "Codigo": "PUREYOUTH",
+    "Descripcion": "Perfume vibrante y juvenil",
+    "notas": ["Floral", "Frutal", "Aromatica"]
+  },
+  {
+    "id": 3,
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Sexy",
+    "Codigo": "Sexy Symbol",
+    "Descripcion": "Es una fragancia seductora y sofisticada realizada para mujeres que irradian confianza.",
+    "notas": ["Almizcle", "Frutal", "Aromatica"]
+  },
+  {
+    "id": 4,
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Vip",
+    "Codigo": "Carola",
+    "Descripcion": "Es una fragancia glamorosa y vibrante, disenada para mujeres seguras y carismaticas.",
+    "notas": ["Ambar", "Oriental", "Aromatica"]
+  },
+  {
+    "id": 5,
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Vip Rose",
+    "Codigo": "Carola Rose",
+    "Descripcion": "Fragancia femenina, elegante y sotisticada.",
+    "notas": ["Floral", "Frutal", "Aromatica"]
+  }
 ]

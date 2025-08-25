@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Barra from "../components/Barra.astro";
 import Carousel from "../components/Carousel.astro";
 import ScrollCard from "../components/ScrollCard.astro";
 import type { CarouselSlideType } from "astro-bootstrap";
@@ -15,7 +14,6 @@ const slidesWomen: CarouselSlideType[] = [
 ---
 
 <Layout>
-  <Barra />
   <section class="d-flex flex-column gap-4">
     <div class="d-flex flex-column flex-md-row gap-4 justify-content-around bg-darkblue p-5">
       <div class="" style="max-width: 26em;">
@@ -67,3 +65,6 @@ const slidesWomen: CarouselSlideType[] = [
   </section>
   <ScrollCard></ScrollCard>
 </Layout>
+<script>
+  sessionStorage.setItem("nav_search","[]")
+</script>

@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <h1 class="text-center">Explora nuestro Catalogo</h1>
+  <div class="container">
+    <div
+      id="cards-catalogo"
+      class="row row-cols-2 gap-3 justify-content-center justify-content-md-start"
+    >
+    </div>
+  </div>
+</Layout>
+
+<script>
+
+
+  interface json_item {
+    item: {
+      id: number;
+      casaComercial: string;
+      Referencia: string;
+      Codigo: string;
+      Descripcion: string;
+      notas: [string];
+    };
+  }
+
+  const resultados_search: json_item[] = JSON.parse(
+    sessionStorage.getItem("nav_search") || "[]"
+  );
+
+  import create_card from "../components/cards.ts";
+  const cards_catalogo: HTMLDivElement = document.getElementById(
+    "cards-catalogo"
+  ) as HTMLDivElement;
+
+  if (resultados_search.length === 0) {
+    alert(
+      "Porfa ingresa un codigo, referencias o casa comercial para mostrat el producto"
+    );
+    const h3 = document.createElement("h3")
+    h3.textContent="Ya leiste la alerta >:v"
+    cards_catalogo.appendChild(h3)
+  } else {
+    resultados_search.map((perfume) => {
+      const card = create_card(perfume.item);
+      cards_catalogo.appendChild(card);
+    });
+  }
+</script>
