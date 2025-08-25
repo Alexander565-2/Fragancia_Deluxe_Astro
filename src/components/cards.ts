@@ -24,7 +24,7 @@ const notas_colors:Record<string,string> = {
   "Aromatica":"#ced2d5"
 }
 
-const create_card = (info_cards: cards_props, baseUrl:string):HTMLDivElement => {
+const create_card = (info_cards: cards_props):HTMLDivElement => {
   const msj_body = `${info_cards.Referencia} - ${info_cards.Codigo} de ${info_cards.casaComercial}`;
   const url_ws =
     "https://wa.me/593998094332?text=Hola%2C%20buenas%20tardes%2C%20vengo%20a%20pedir%20informacion%20por%20este%20producto:%20" +
@@ -55,7 +55,7 @@ const create_card = (info_cards: cards_props, baseUrl:string):HTMLDivElement => 
   div_card.style.width = "17rem";
 
   const formatSrc:string = (info_cards.Referencia+info_cards.Codigo).replaceAll(" ","")
-  img_card.src = `${baseUrl}/Perfumes/${formatSrc}.png`;
+  img_card.src = `Fragancia_Deluxe_Astro/Perfumes/${formatSrc}.png`;
   img_card.alt = formatSrc
   img_card.className = "card-img-top";
   img_card.style.objectFit="cover"

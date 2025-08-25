@@ -16,7 +16,6 @@ const baseUrl = Astro.site;
 
 <script>
 
-  const urlBase = "{baseUrl}"
 
   interface json_item {
     item: {
@@ -47,7 +46,7 @@ const baseUrl = Astro.site;
     cards_catalogo.appendChild(h3)
   } else {
     resultados_search.map((perfume) => {
-      const card = create_card(perfume.item, urlBase);
+      const card = create_card(perfume.item);
       cards_catalogo.appendChild(card);
     });
   }
