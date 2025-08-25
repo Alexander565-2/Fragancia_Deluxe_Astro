@@ -37,7 +37,7 @@ const fuse = new Fuse(Perfumes,{
     if(value_search){
       const resultados = fuse.search(value_search)
       sessionStorage.setItem("nav_search",JSON.stringify(resultados))
-      window.location.href = "catalogo"
+      window.location.href = "/Fragancia_Deluxe_Astro/catalogo"
     }else{
       alert("Ingrese algo para buscar >:v")
     }
