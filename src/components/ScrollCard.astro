@@ -1,12 +1,12 @@
 ---
 import perfumes from '../data/perfumes.json'
 const sampleCards = [
-  { id: "1", image: "Carousel/BossBose.jpg", title: "Oficinas Modernas", subtitle: "Espacios de trabajo innovadores para tu empresa", buttonText: "Ver Más"},
-  { id: "2", image: "Carousel/BossBose.jpg", title: "Hogar Acogedor", subtitle: "Diseños que transforman tu espacio personal", buttonText: "Explorar" },
-  { id: "3", image: "Carousel/BossBose.jpg", title: "Restaurante Elegante", subtitle: "Ambientes perfectos para experiencias gastronómicas", buttonText: "Reservar" },
-  { id: "4", image: "Carousel/BossBose.jpg", title: "Tienda Retail", subtitle: "Espacios comerciales que impulsan las ventas", buttonText: "Contactar" },
-  { id: "5", image: "Carousel/BossBose.jpg", title: "Hotel de Lujo", subtitle: "Hospitalidad redefinida con diseño excepcional", buttonText: "Descubrir" },
-  { id: "6", image: "Carousel/BossBose.jpg", title: "Centro Fitness", subtitle: "Espacios motivadores para el bienestar", buttonText: "Unirse" },
+  { Id: "M1", image: "Carousel/BossBose.jpg", title: "Oficinas Modernas", subtitle: "Espacios de trabajo innovadores para tu empresa", buttonText: "Ver Más"},
+  { Id: "M2", image: "Carousel/BossBose.jpg", title: "Hogar Acogedor", subtitle: "Diseños que transforman tu espacio personal", buttonText: "Explorar" },
+  { Id: "M3", image: "Carousel/BossBose.jpg", title: "Restaurante Elegante", subtitle: "Ambientes perfectos para experiencias gastronómicas", buttonText: "Reservar" },
+  { Id: "M4", image: "Carousel/BossBose.jpg", title: "Tienda Retail", subtitle: "Espacios comerciales que impulsan las ventas", buttonText: "Contactar" },
+  { Id: "M5", image: "Carousel/BossBose.jpg", title: "Hotel de Lujo", subtitle: "Hospitalidad redefinida con diseño excepcional", buttonText: "Descubrir" },
+  { Id: "M6", image: "Carousel/BossBose.jpg", title: "Centro Fitness", subtitle: "Espacios motivadores para el bienestar", buttonText: "Unirse" },
 ];
 
 const infiniteCards = [
@@ -29,7 +29,7 @@ const infiniteCards = [
         class="card flex-shrink-0 me-3 shadow-sm"
         style="width: 18rem; transform: scale(1) translateY(0); z-index:1; transition: transform 0.3s;"
       >
-        <img src={"Perfumes/"+(card.Referencia+card.Codigo).replace(/ /g,"")+".png"} class="card-img-top" alt={card.Referencia+card.Codigo} draggable="false" />
+        <img src={"Perfumes/M"+card.originalIndex+".png"} class="card-img-top" alt={card.Referencia+card.Codigo} draggable="false" />
         <div class="card-body">
           <h5 class="card-title">{card.casaComercial}</h5>
           <p class="card-text">{card.Referencia}</p>

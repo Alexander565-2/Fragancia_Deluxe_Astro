@@ -39,7 +39,8 @@ const fuse = new Fuse(Perfumes,{
       sessionStorage.setItem("nav_search",JSON.stringify(resultados))
       window.location.href = "/Fragancia_Deluxe_Astro/catalogo"
     }else{
-      alert("Ingrese algo para buscar >:v, Prueba con 212")
+      const resultado_azar = Perfumes.sort(() => 0.5 - Math.random()).slice(0,10);
+      sessionStorage.setItem("nav_search",JSON.stringify(resultado_azar));
     }
 
   })
