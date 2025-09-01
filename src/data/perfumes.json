@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "M1",
     "casaComercial": "Carolina Herrera",
     "Referencia": "212",
     "Codigo": "Ariana",
@@ -8,7 +8,7 @@
     "notas": ["Almizcle", "Floral", "Cuero", "Aromatica"]
   },
   {
-    "id": 2,
+    "id": "M2",
     "casaComercial": "Carolina Herrera",
     "Referencia": "212 Heroes Forever Young",
     "Codigo": "PUREYOUTH",
@@ -16,7 +16,7 @@
     "notas": ["Floral", "Frutal", "Aromatica"]
   },
   {
-    "id": 3,
+    "id": "M3",
     "casaComercial": "Carolina Herrera",
     "Referencia": "212 Sexy",
     "Codigo": "Sexy Symbol",
@@ -24,7 +24,7 @@
     "notas": ["Almizcle", "Frutal", "Aromatica"]
   },
   {
-    "id": 4,
+    "id": "M4",
     "casaComercial": "Carolina Herrera",
     "Referencia": "212 Vip",
     "Codigo": "Carola",
@@ -32,11 +32,209 @@
     "notas": ["Ambar", "Oriental", "Aromatica"]
   },
   {
-    "id": 5,
+    "id": "M5",
     "casaComercial": "Carolina Herrera",
     "Referencia": "212 Vip Rose",
     "Codigo": "Carola Rose",
     "Descripcion": "Fragancia femenina, elegante y sotisticada.",
     "notas": ["Floral", "Frutal", "Aromatica"]
+  },
+
+  {
+    "id": "M6",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Vip Rose Elexir",
+    "Codigo": "Carola Rose elixir",
+    "Descripcion": "Es una fragancia ideal para la noche, elegante y con un airefestivo",
+    "notas": ["Floral", "Aromatica"]
+  },
+  {
+    "id": "M7",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Vip Rose Red",
+    "Codigo": "Buoyogand Carolal",
+    "Descripcion": "Es un perfume ideal para la noche y ocasiones especiales.",
+    "notas": ["Frutal", "Floral"]
+  },
+  {
+    "id": "M8",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Vip Wild Party",
+    "Codigo": "Wilda",
+    "Descripcion": "Es un perfume ideal para fiestas y eventos especiales, con una esencia juvenil y sofisticada.",
+    "notas": ["Frutal", "Floral"]
+  },
+  {
+    "id": "M9",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Carolina Herrera",
+    "Codigo": "Carol",
+    "Descripcion": "Es una fragancia elegante, fresca y femenina.",
+    "notas": ["Floral", "Aromatica"]
+  },
+  {
+    "id": "M10",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "CH",
+    "Codigo": "Carolina",
+    "Descripcion": "Huele feminidad con un toque atrevido y seductor.",
+    "notas": ["Ambar", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M11",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Good Girl",
+    "Codigo": "Carolina",
+    "Descripcion": "Es una fragancia femenina muy popular, conocida por su sensualidad y sofisticacion.",
+    "notas": ["Ambar", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M12",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Good Girl Blush",
+    "Codigo": "Be Bad Powdery",
+    "Descripcion": "Es una version mas suave, romantica y femenina.",
+    "notas": ["Chipre", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M13",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Good Girl Dazzlin Garden",
+    "Codigo": "Purple Hell",
+    "Descripcion": "Huele a elegancia, lujo y feminidad con un toque atrevido y seductor.",
+    "notas": ["Floral", "Aromatica"]
+  },
+  {
+    "id": "M14",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Good Girl Legere",
+    "Codigo": "Audacious Heroine",
+    "Descripcion": "Es una fragancia glamorosa y vibrante, disenada para mujeres seguras y carismaticas.",
+    "notas": ["Ambar", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M15",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Good Girl Supreme",
+    "Codigo": "Ultimate Godina",
+    "Descripcion": "Huele a sensualidad atrevida y empoderada, Es dulce y envolvente gracias a las frutasl.",
+    "notas": ["Ambar", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M16",
+    "casaComercial": "Carolina herrera",
+    "Referencia": "Very Good Girl",
+    "Codigo": "Be Very bad",
+    "Descripcion": "Combinacion dulce, fresca y sostificada. es una fragancia que destaca por su ligereza frutal.",
+    "notas": ["Frutal", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M17",
+    "casaComercial": "Guess",
+    "Referencia": "Guess",
+    "Codigo": "Adivina",
+    "Descripcion": "Fragancia fresca, afrutada y ligeramente floral.",
+    "notas": ["Frutal", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M18",
+    "casaComercial": "Guess",
+    "Referencia": "Guess Gold",
+    "Codigo": "Oroguey",
+    "Descripcion": "Perfume ideal para quienes buscan una fragancia que combine frescura y dulzura",
+    "notas": ["Frutal", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M19",
+    "casaComercial": "Hugo Boss",
+    "Referencia": "Boss The Scent for Her",
+    "Codigo": "Smella",
+    "descripcion": "Fragancia sostificada, sensual y calida.",
+    "notas": ["Frutal", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M20",
+    "casaComercial": "Hugo Boss",
+    "Referencia": "Hugo Woman",
+    "Codigo": "Paola",
+    "Descripcion": "Fragancia fresca, limpia y sofisticada.",
+    "notas": ["Ambar", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M21",
+    "casaComercial": "Hugo Boss",
+    "Referencia": "Hugo XX",
+    "Codigo": "Xenia",
+    "Descripcion": "Fragancia Fresca y floral, pero con una base mas calidad y amaderada.",
+    "notas": ["Frutal", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M22",
+    "casaComercial": "Versace",
+    "Referencia": "Bright Cristal",
+    "Codigo": "Bohemia",
+    "Descripcion": "Fragancia fresca y femenina, con un toque afrutado y floral.",
+    "notas": ["Frutal", "Floral", "Aromatica"]
+  },
+  {
+    "id": "M23",
+    "casaComercial": "Versace",
+    "Referencia": "Yellow Diamond",
+    "Codigo": "Florentine",
+    "Descripcion": "Es una fragancia ideal para el dia fresca y elegante, perfecta para mujeres seguras y sofisticadas.",
+    "notas": ["Floral"]
+  },
+  {
+    "id": "M24",
+    "casaComercial": "Lolita Lempika",
+    "Referencia": "Lolita Lempika",
+    "Codigo": "Lolita",
+    "Descripcion": "Fragancia para mujeres romanticas, sonadoras y con un espiritu creativo.",
+    "notas": ["Floral", "Frutal", "Aromatica"]
+  },
+  {
+    "id": "M25",
+    "casaComercial": "Beverlyhills",
+    "Referencia": "273",
+    "Codigo": "Dosietres",
+    "Descripcion": "Se caracteriza por susx sofisticacion y elegancia.",
+    "notas": ["Floral", "Aromatica"]
+  },
+  {
+    "id": "M26",
+    "casaComercial": "Chanel",
+    "Referencia": "Chance",
+    "Codigo": "Fortuna",
+    "Descripcion": "Huele a una mezclia fresca, floral y vibrante, con un toque calido.",
+    "notas": ["Chipre","Floral", "Aromatica"]
+  },
+    {
+    "id": "M27",
+    "casaComercial": "Chanel",
+    "Referencia": "Chance EAU tendre",
+    "Codigo": "Suerte",
+    "Descripcion": "Huele a ternura, frescura y feminidad. Es una fragancia luminosa y delicada,",
+    "notas": ["Ambar", "Frutal"]
+  },  {
+    "id": "M28",
+    "casaComercial": "Chanel",
+    "Referencia": "Chanel #5",
+    "Codigo": "Charmia",
+    "Descripcion": "Huele a elegancia, refinamiento y feminidad clasica. Su caracter es atemporal.",
+    "notas": ["Floral", "Aromatica"]
+  },  {
+    "id": "M29",
+    "casaComercial": "Chanel",
+    "Referencia": "Coco Chanel",
+    "Codigo": "Moorea",
+    "Descripcion": "Huele a sofisticacion clasica y atemporal. Es una fragancia calida y envolvente.",
+    "notas": ["Ambar","Floral", "Aromatica"]
+  },  {
+    "id": "M30",
+    "casaComercial": "Chanel",
+    "Referencia": "Coco mademoiselle",
+    "Codigo": "Young & chic",
+    "Descripcion": "Huele a una combinacién fresca, floral y sofisticada.",
+    "notas": ["Floral", "Ambar"]
   }
 ]

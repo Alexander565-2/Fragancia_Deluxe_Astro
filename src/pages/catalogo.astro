@@ -19,7 +19,7 @@ const baseUrl = Astro.site;
 
   interface json_item {
     item: {
-      id: number;
+      id: string;
       casaComercial: string;
       Referencia: string;
       Codigo: string;
@@ -32,6 +32,7 @@ const baseUrl = Astro.site;
     sessionStorage.getItem("nav_search") || "[]"
   );
 
+  console.log(resultados_search)
   import create_card from "../components/cards.ts";
   const cards_catalogo: HTMLDivElement = document.getElementById(
     "cards-catalogo"
