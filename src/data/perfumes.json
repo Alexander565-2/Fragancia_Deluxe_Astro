@@ -247,5 +247,13 @@
     "Codigo": "Aquamen",
     "Descripcion": "Fragancia frezca y energizante, ideal para el verano con aromas limpios.",
     "notas": ["Amaderado", "Acuatica"]
+  },
+  {
+    "id": "H2",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 CH",
+    "Codigo": "Adrian",
+    "Descripcion": "Fragancia frezca, moderna y energizante, ideal para hombres con elegancia.",
+    "notas": ["Floral", "Frutal"]
   }
 ]
