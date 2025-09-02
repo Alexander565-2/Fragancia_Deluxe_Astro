@@ -206,30 +206,33 @@
     "Referencia": "Chance",
     "Codigo": "Fortuna",
     "Descripcion": "Huele a una mezclia fresca, floral y vibrante, con un toque calido.",
-    "notas": ["Chipre","Floral", "Aromatica"]
+    "notas": ["Chipre", "Floral", "Aromatica"]
   },
-    {
+  {
     "id": "M27",
     "casaComercial": "Chanel",
     "Referencia": "Chance EAU tendre",
     "Codigo": "Suerte",
     "Descripcion": "Huele a ternura, frescura y feminidad. Es una fragancia luminosa y delicada,",
     "notas": ["Ambar", "Frutal"]
-  },  {
+  },
+  {
     "id": "M28",
     "casaComercial": "Chanel",
     "Referencia": "Chanel #5",
     "Codigo": "Charmia",
     "Descripcion": "Huele a elegancia, refinamiento y feminidad clasica. Su caracter es atemporal.",
     "notas": ["Floral", "Aromatica"]
-  },  {
+  },
+  {
     "id": "M29",
     "casaComercial": "Chanel",
     "Referencia": "Coco Chanel",
     "Codigo": "Moorea",
     "Descripcion": "Huele a sofisticacion clasica y atemporal. Es una fragancia calida y envolvente.",
-    "notas": ["Ambar","Floral", "Aromatica"]
-  },  {
+    "notas": ["Ambar", "Floral", "Aromatica"]
+  },
+  {
     "id": "M30",
     "casaComercial": "Chanel",
     "Referencia": "Coco mademoiselle",
