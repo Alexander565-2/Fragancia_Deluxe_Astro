@@ -18,14 +18,12 @@ const baseUrl = Astro.site;
 
 
   interface json_item {
-    item: {
       id: string;
       casaComercial: string;
       Referencia: string;
       Codigo: string;
       Descripcion: string;
       notas: [string];
-    };
   }
 
   const resultados_search: json_item[] = JSON.parse(
@@ -34,21 +32,34 @@ const baseUrl = Astro.site;
 
   console.log(resultados_search)
   import create_card from "../components/cards.ts";
+  import ScrollReveal from  "scrollreveal"
+
+  const Reveal = ScrollReveal()
   const cards_catalogo: HTMLDivElement = document.getElementById(
     "cards-catalogo"
   ) as HTMLDivElement;
 
   if (resultados_search.length === 0) {
     alert(
-      "Porfa ingresa un codigo, referencias o casa comercial para mostrat el producto"
+      "Porfa ingresa un codigo, referencias o casa comercial valido para mostrat el producto"
     );
     const h3 = document.createElement("h3")
-    h3.textContent="Ya leiste la alerta >:v"
+    h3.textContent="Oops no hay el perfume que buscas!!!, Selecciona Buscar para una busqueda Aleatoria :)"
     cards_catalogo.appendChild(h3)
   } else {
     resultados_search.map((perfume) => {
-      const card = create_card(perfume.item);
+      const card = create_card(perfume);
       cards_catalogo.appendChild(card);
     });
   }
+
+Reveal.reveal('.card', {
+  origin: 'left',   // vienen desde abajo
+  distance: '60px',   // qué tan lejos viajan
+  duration: 1000,     // duración en ms
+  easing: 'ease-in-out',
+  interval: 100,      // retraso entre cada card
+  reset: true        // no repetir la animación cada vez que aparece
+});
+
 </script>

@@ -21,11 +21,11 @@ const infiniteCards = [
         class="card flex-shrink-0 me-3 shadow-sm"
         style="width: 18rem; transform: scale(1) translateY(0); z-index:1; transition: transform 0.3s;"
       >
-        <img src={"Perfumes/M"+card.originalIndex+".png"} class="card-img-top" alt={card.Referencia+card.Codigo} draggable="false" />
+        <img src={("Perfumes/"+card.id+".png").replace('end-',"").replace('start-',"")} class="card-img-top" alt={card.Referencia+card.Codigo} draggable="false" />
         <div class="card-body">
           <h5 class="card-title">{card.casaComercial}</h5>
-          <p class="card-text">{card.Referencia}</p>
-          <button class="btn btn-primary w-100">{card.Codigo}</button>
+          <p class="card-text">{card.Referencia + " - "+ card.Codigo}</p>
+          <a href={`https://wa.me/593985087811?text=Hola%2C%20buenas%20tardes%2C%20vengo%20a%20pedir%20informacion%20por%20este%20producto:%20${card.Referencia}%20-%20${card.Codigo}%20de%20${card.casaComercial}`} class="btn btn-primary w-100">Comprar</a>
         </div>
       </div>
     ))}

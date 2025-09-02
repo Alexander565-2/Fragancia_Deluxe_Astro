@@ -25,6 +25,8 @@ const id = "navBar";
 <script>
 import Perfumes from "../data/perfumes.json"
 import Fuse from "fuse.js"
+import Chance from "chance"
+const chance = new Chance()
 const fuse = new Fuse(Perfumes,{
     keys:["casaComercial","Referencia","Codigo"],
     threshold:0.0
@@ -35,12 +37,13 @@ const fuse = new Fuse(Perfumes,{
     event.preventDefault();
     const value_search = nav_input_search.value.trim();
     if(value_search){
-      const resultados = fuse.search(value_search)
+      const resultados = fuse.search(value_search).map(r => r.item)
       sessionStorage.setItem("nav_search",JSON.stringify(resultados))
       window.location.href = "/Fragancia_Deluxe_Astro/catalogo"
     }else{
-      const resultado_azar = Perfumes.sort(() => 0.5 - Math.random()).slice(0,10);
+      const resultado_azar = chance.pickset(Perfumes,14)
       sessionStorage.setItem("nav_search",JSON.stringify(resultado_azar));
+      window.location.href = "/Fragancia_Deluxe_Astro/catalogo"
     }
 
   })
