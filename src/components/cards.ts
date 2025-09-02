@@ -27,7 +27,7 @@ const notas_colors:Record<string,string> = {
 const create_card = (info_cards: cards_props):HTMLDivElement => {
   const msj_body = `${info_cards.Referencia} - ${info_cards.Codigo} de ${info_cards.casaComercial}`;
   const url_ws =
-    "https://wa.me/593998094332?text=Hola%2C%20buenas%20tardes%2C%20vengo%20a%20pedir%20informacion%20por%20este%20producto:%20" +
+    "https://wa.me/593985087811?text=Hola%2C%20buenas%20tardes%2C%20vengo%20a%20pedir%20informacion%20por%20este%20producto:%20" +
     encodeURIComponent(msj_body);
 
   const div_card: HTMLDivElement = document.createElement(

@@ -15,7 +15,10 @@ const slidesWomen: CarouselSlideType[] = [
 
 <Layout>
   <section class="d-flex flex-column gap-4">
+
+    <ScrollCard></ScrollCard>
     <div class="d-flex flex-column flex-md-row gap-4 justify-content-around bg-darkblue p-5">
+
       <div class="" style="max-width: 26em;">
         <Carousel id="Hombre" slides={slidesMen} />
       </div>
@@ -63,7 +66,6 @@ const slidesWomen: CarouselSlideType[] = [
     </p>
     <img src="logo-cut.jpg" class="img-fluid mx-auto d-block" alt="">
   </section>
-  <ScrollCard></ScrollCard>
 </Layout>
 <script>
   sessionStorage.setItem("nav_search","[]")

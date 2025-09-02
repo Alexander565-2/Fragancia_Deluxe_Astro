@@ -1,13 +1,5 @@
 ---
 import perfumes from '../data/perfumes.json'
-const sampleCards = [
-  { Id: "M1", image: "Carousel/BossBose.jpg", title: "Oficinas Modernas", subtitle: "Espacios de trabajo innovadores para tu empresa", buttonText: "Ver Más"},
-  { Id: "M2", image: "Carousel/BossBose.jpg", title: "Hogar Acogedor", subtitle: "Diseños que transforman tu espacio personal", buttonText: "Explorar" },
-  { Id: "M3", image: "Carousel/BossBose.jpg", title: "Restaurante Elegante", subtitle: "Ambientes perfectos para experiencias gastronómicas", buttonText: "Reservar" },
-  { Id: "M4", image: "Carousel/BossBose.jpg", title: "Tienda Retail", subtitle: "Espacios comerciales que impulsan las ventas", buttonText: "Contactar" },
-  { Id: "M5", image: "Carousel/BossBose.jpg", title: "Hotel de Lujo", subtitle: "Hospitalidad redefinida con diseño excepcional", buttonText: "Descubrir" },
-  { Id: "M6", image: "Carousel/BossBose.jpg", title: "Centro Fitness", subtitle: "Espacios motivadores para el bienestar", buttonText: "Unirse" },
-];
 
 const infiniteCards = [
   ...perfumes.map((c, i) => ({ ...c, id: `end-${c.id}`, originalIndex: i })),
