@@ -245,7 +245,7 @@
     "casaComercial": "Carolina Herrera",
     "Referencia": "212 Aqua",
     "Codigo": "Aquamen",
-    "Descripcion": "Fragancia frezca y energizante, ideal para el verano con aromas limpios.",
+    "Descripcion": "Fragancia fresca y energizante, ideal para el verano con aromas limpios.",
     "notas": ["Amaderado", "Acuatica"]
   },
   {
@@ -255,5 +255,77 @@
     "Codigo": "Adrian",
     "Descripcion": "Fragancia frezca, moderna y energizante, ideal para hombres con elegancia.",
     "notas": ["Floral", "Frutal"]
+  },
+  {
+    "id": "H3",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 HEROES",
+    "Codigo": "Pure Freedoman",
+    "Descripcion": "Se presenta como un homenaje a la juventud, la libertad",
+    "notas": ["Aromatica"]
+  },
+    {
+    "id": "H4",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Sexy men",
+    "Codigo": "Sexy man",
+    "Descripcion": "Version más calida y seductora de la original 212, con unas notas más profundas",
+    "notas": ["Vainilla", "Frutal"]
+  },
+   {
+    "id": "H5",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 VIP Black Red",
+    "Codigo": "Buoyant King",
+    "Descripcion": "Fragancia esta dirigida a jóvenes y modernos que buscan un aroma audaz",
+    "notas": ["Amaderado", "Especiada" ]
+  },
+   {
+    "id": "H6",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 VIP MEN",
+    "Codigo": "Vicario",
+    "Descripcion": "Fragancia esta inspirada en el estilo de vida exclusivo y vibrante de las fiestas NYC",
+    "notas": ["Oriental", "Amaderado" ]
+  },
+    {
+    "id": "H7",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Vip Men Black",
+    "Codigo": " King Of Partieo",
+    "Descripcion": "Una interpretación más intensa y misteriosa de la fragancia original",
+    "notas": ["Aromatica", "Fougére" ]
+  },
+    {
+    "id": "H8",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "212 Vip Men Wild Party",
+    "Codigo": "Wildo",
+    "Descripcion": "Fragancia esta inspirada en la energía y el ambiente de una fiesta salvaje",
+    "notas": ["Ambar", "Floral", "Aromatica"]
+  },
+  {
+    "id": "H9",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Bad boy",
+    "Codigo": "Bold Flash",
+    "Descripcion": "Fragancia versátil, ideal tanto para el dia como para la noche",
+    "notas": ["Ambar", "Aromatica", "Amaderado" ]
+  },
+   {
+    "id": "H10",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": "Bad Boy Dazzling Garden",
+    "Codigo": "Dazzling Ligth 3",
+    "Descripcion": "Fragancia versátil, ideal tanto para el dia como para la noche",
+    "notas": ["Ambar", "Aromatica", "Amaderado" ]
+  },
+   {
+    "id": "H11",
+    "casaComercial": "Carolina Herrera",
+    "Referencia": " CH MEN",
+    "Codigo": "Carloman",
+    "Descripcion": "Fragancia versátil y refinada, ideal para el hombre sofesticado y con aroma fresco",
+    "notas": ["Aromatica", "Especiada" ]
   }
 ]
