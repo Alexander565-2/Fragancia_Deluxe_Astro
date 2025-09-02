@@ -5,5 +5,5 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 site:'https://alexander565-2.github.io',
 base: '/Fragancia_Deluxe_Astro/',
- outDir: 'dist',
+ outDir: 'docs',
 });
