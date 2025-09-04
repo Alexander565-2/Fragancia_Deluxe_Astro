@@ -15,15 +15,17 @@ const slidesWomen: CarouselSlideType[] = [
 
 <Layout>
   <section class="d-flex flex-column gap-4">
-
-    <ScrollCard></ScrollCard>
-    <div class="d-flex flex-column flex-md-row gap-4 justify-content-around bg-darkblue p-5">
-
+    <ScrollCard />
+    <div
+      class="d-flex flex-column flex-md-row gap-4 justify-content-around bg-darkblue p-5"
+    >
       <div class="" style="max-width: 26em;">
         <Carousel id="Hombre" slides={slidesMen} />
       </div>
       <div class="container-fluid d-flex flex-column gap-2">
-        <h2 class="text-center"><strong>Perfumes Para <span class="gold">Hombres</span></strong></h2>
+        <h2 class="text-center">
+          <strong>Perfumes Para <span class="gold">Hombres</span></strong>
+        </h2>
         <p>
           Las fragancias masculinas de Fragancia Delexus combinan fuerza,
           carácter y sofisticación. Desde aromas amaderados y especiados hasta
@@ -32,16 +34,22 @@ const slidesWomen: CarouselSlideType[] = [
           tu presencia, dejando una estela que refleja tu personalidad única.
         </p>
         <div class="d-flex justify-content-center">
-          <a href="/Fragancia_Deluxe_Astro/catalogo" class="btn btn-warning text-light w-50"><strong>Ver Catalogo</strong></a>
+          <button class="btn btn-warning text-light w-50" id="btn-H"
+            ><strong>Ver Catalogo</strong></button
+          >
         </div>
       </div>
     </div>
-    <div class="d-flex flex-column flex-md-row-reverse gap-4 justify-content-around p-5 bg-darkgreen">
+    <div
+      class="d-flex flex-column flex-md-row-reverse gap-4 justify-content-around p-5 bg-darkgreen"
+    >
       <div class="" style="max-width: 26em;">
         <Carousel id="Mujer" slides={slidesWomen} />
       </div>
       <div class="container-fluid d-flex flex-column gap-2">
-        <h2 class="text-center"><strong><span class="gold">Perfumes</span> Para Mujeres</strong></h2>
+        <h2 class="text-center">
+          <strong><span class="gold">Perfumes</span> Para Mujeres</strong>
+        </h2>
         <p>
           Nuestros perfumes femeninos están diseñados para resaltar la esencia
           de la mujer moderna: elegante, segura y llena de vida. Con notas
@@ -50,13 +58,17 @@ const slidesWomen: CarouselSlideType[] = [
           y dejar una impresión inolvidable en cada paso que das.
         </p>
         <div class="d-flex justify-content-center">
-          <a href="/Fragancia_Deluxe_Astro/catalogo" class="btn btn-warning text-light w-50"><strong>Ver Catalogo</strong></a>
+          <a id="btn-M" class="btn btn-warning text-light w-50"
+            ><strong>Ver Catalogo</strong></a
+          >
         </div>
       </div>
     </div>
   </section>
   <section class="p-4 bg-dark100" id="About">
-    <h2 class="text-center"><strong>Sobre <span class="gold">Nosotros</span></strong></h2>
+    <h2 class="text-center">
+      <strong>Sobre <span class="gold">Nosotros</span></strong>
+    </h2>
     <p>
       En Fragancia Delexus, creemos que cada aroma cuenta una historia. Desde
       los clásicos elegantes hasta las fragancias más modernas y audaces, nos
@@ -64,9 +76,32 @@ const slidesWomen: CarouselSlideType[] = [
       de cada persona. Nuestra misión es acompañarte en cada momento especial,
       brindándote experiencias olfativas que despierten emociones y recuerdos.
     </p>
-    <img src="logo-cut.jpg" class="img-fluid mx-auto d-block" alt="">
+    <img src="logo-cut.jpg" class="img-fluid mx-auto d-block" alt="" />
   </section>
 </Layout>
 <script>
-  sessionStorage.setItem("nav_search","[]")
+
+  sessionStorage.setItem("nav_search", "[]");
+  sessionStorage.setItem("msj_catalogo",JSON.stringify(""))
+  import Perfumes from "../data/perfumes.json";
+  const btn_H: HTMLButtonElement = document.getElementById(
+    "btn-H"
+  ) as HTMLButtonElement;
+  const btn_M: HTMLButtonElement = document.getElementById(
+    "btn-M"
+  ) as HTMLButtonElement;
+
+  btn_H.addEventListener("click", () => {
+    const Perfumes_H = Perfumes.filter((perfume) => perfume.id.startsWith("H"));
+    sessionStorage.setItem("nav_search", JSON.stringify(Perfumes_H));
+    sessionStorage.setItem("msj_catalogo",JSON.stringify("Disfrutas nuestros perfumes para Hombres."))
+    window.location.href = "/Fragancia_Deluxe_Astro/catalogo";
+  });
+
+  btn_M.addEventListener("click", () => {
+    const Perfumes_M = Perfumes.filter((perfume) => perfume.id.startsWith("M"));
+    sessionStorage.setItem("nav_search", JSON.stringify(Perfumes_M));
+    sessionStorage.setItem("msj_catalogo",JSON.stringify("Disfrutas nuestros perfumes para Mujeres."))
+    window.location.href = "/Fragancia_Deluxe_Astro/catalogo";
+  });
 </script>
